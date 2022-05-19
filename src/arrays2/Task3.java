@@ -10,20 +10,20 @@ public class Task3 {
 Второй массив: {{1,2,3},{1,1,1},{0,0,0},{2,1,0}}
 Ожидаемый результат: 1 2 3  1 1 1  0 0 0
          */
-        int[][] array1 = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}};
-        int[][] array2 = {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}, {2, 1, 0}};
-        int[][] array3 = new int[array1.length][array2[0].length];
+        int[][] matrix1 = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}};
+        int[][] matrix2 = {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}, {2, 1, 0}};
+        int[][] matrix3 = new int[matrix1.length][matrix2[0].length];
 
-        for (int i = 0; i < array3[0].length; i++) {
-            for (int j = 0; j < array3.length; j++) {
-                for (int k = 0; k < array1[0].length; k++) {
-                    array3[i][j] += array1[i][k] * array2[k][j];
+        for (int i = 0; i < matrix3[0].length; i++) {
+            for (int j = 0; j < matrix3.length; j++) {
+                for (int k = 0; k < matrix1[0].length; k++) {
+                    matrix3[i][j] += matrix1[i][k] * matrix2[k][j];
                 }
             }
         }
-        for (int i = 0; i < array3.length; i++) {
-            for (int j = 0; j < array3[0].length; j++) {
-                System.out.print(array3[i][j] + " ");
+        for (int i = 0; i < matrix3.length; i++) {
+            for (int j = 0; j < matrix3[0].length; j++) {
+                System.out.print(matrix3[i][j] + " ");
             }
             System.out.println();
         }
