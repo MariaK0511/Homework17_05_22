@@ -16,8 +16,8 @@ public class Task2 {
         int sizeArray = scanner.nextInt();
         int[] array = new int[sizeArray];
         Random r = new Random();
-        for (int j = 0; j < array.length; j++) {
-            array[j] = r.nextInt(sizeArray);
+        for (int indexArray = 0; indexArray < array.length; indexArray++) {
+            array[indexArray] = r.nextInt(sizeArray);
         }
         System.out.println(Arrays.toString(array));
 
