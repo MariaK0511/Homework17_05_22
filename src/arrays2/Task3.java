@@ -1,5 +1,6 @@
 package arrays2;
 
+
 public class Task3 {
     public static void main(String[] args) {
         /*
@@ -18,6 +19,8 @@ public class Task3 {
             for (int j = 0; j < matrix2[i].length; j++) {
                 for (int k = 0; k < matrix2.length; k++) {
                     matrix3[i][j] += matrix1[i][k] * matrix2[k][j];
+                    //i(row matrix1) and j(column matrix2) size this matrix
+                    //A1[0,0]*A2[0,0]+A1[0,1]*A2[1,0]+A1[0,2]*A2[2,0]
                 }
             }
         }
